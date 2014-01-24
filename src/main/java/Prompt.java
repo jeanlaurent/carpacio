@@ -13,6 +13,6 @@ public class Prompt {
         double reamPrice = scanner.nextDouble();
         System.out.println("Country Code");
         String countryCode = scanner.next();
-        System.out.println(new PaperReamShop().totalPrice(quantity, reamPrice, CountryCode.valueOf(countryCode)));
+        System.out.println(new PaperReamShop().computePrice(quantity, reamPrice, TaxByCountry.valueOf(countryCode)));
     }
 }
